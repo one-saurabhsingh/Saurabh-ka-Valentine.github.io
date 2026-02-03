@@ -1,0 +1,73 @@
+:root {
+  --card-width: 86vw;          /* fits iphone screen */
+  --title-size: 6.2vw;         /* dynamic text */
+  --btn-size: 4.6vw;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: -apple-system, BlinkMacSystemFont, Arial;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+
+  padding: 6vw 4vw;
+  border-radius: 22px;
+
+  text-align: center;
+  width: var(--card-width);
+
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+h1 {
+  color: #ff4d6d;
+  margin-bottom: 6vw;
+
+  font-size: var(--title-size);
+  line-height: 1.25;
+}
+
+button {
+  padding: 3.2vw 6vw;
+  font-size: var(--btn-size);
+
+  border: none;
+  border-radius: 30px;
+
+  cursor: pointer;
+}
+
+.yes {
+  background: #ff4d6d;
+  color: white;
+
+  margin-right: 3vw;
+}
+
+.no {
+  background: #ddd;
+
+  position: fixed;
+  left: 52%;
+  top: 62%;
+}
+
+/* large screens fallback */
+@media (min-width: 600px) {
+  :root {
+    --card-width: 360px;
+    --title-size: 22px;
+    --btn-size: 16px;
+  }
+}
