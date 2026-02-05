@@ -38,7 +38,7 @@ By saying yes, you agree to late replies sometimes 😏, bad jokes always 📈, 
 
 
       <img
-        src="https://i.ibb.co/mVQKhNj3/2.png"
+        src="2.png"
         style="
           display:block;
           width:70vw;
